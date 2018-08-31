@@ -5,7 +5,7 @@ import { AlertController } from 'ionic-angular';
 @Injectable()
 export class AlertService {
 
-  constructor(private alertController: AlertController) { }
+constructor(private alertController: AlertController) { }
 
     presentConfirm(titulo: string = '', msg: string = '', callback: () => void = function () {}) {
         let alert = this.alertController.create({
